@@ -1,0 +1,33 @@
+.global-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  background-color: var(--bg-main-color);
+  .company-logo {
+    width: 100px;
+    border: none;
+    margin-left: 120px;
+    background-color: var(--bg-main-color);
+  }
+  .global-header__nav-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      color: var(--text-color-main);
+    }
+  }
+  .global-header__order-btn {
+    height: 43.6px;
+    width: 191.625px;
+    margin-right: 120px;
+    background-color: var(--button-color-dark);
+    color: var(--text-color-light);
+    border: none;
+    outline: none;
+  }
+}

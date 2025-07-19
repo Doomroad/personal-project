@@ -7,6 +7,10 @@
 }
 
 :root {
+  --bg-main-color: #c8d1af;
+  --text-color-main: #577270;
+  --text-color-light: #f1e6e1;
+  --button-color-dark: #325956;
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
 }
@@ -31,6 +35,11 @@ h4,
 h5,
 h6 {
   font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
