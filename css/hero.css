@@ -3,5 +3,110 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
   height: 900px;
+  h1 {
+    color: var(--text-color-dark);
+    font-size: 4.5rem;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hero__description {
+    font-size: 19px;
+    color: var(--text-color-main);
+    padding: 50px 0 30px 0;
+  }
+  .hero__cfa {
+    font-size: 17px;
+    color: var(--text-color-mid);
+    span {
+      font-size: 31px;
+      font-weight: bold;
+      color: var(--text-color-dark);
+    }
+  }
+  .hero__container {
+    width: 520px;
+    margin-left: 180px;
+    padding-top: 240px;
+  }
+  .hero__media-links {
+    padding-top: 60px;
+
+    .social-icons__icon {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+
+      &-svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .social-icons__background {
+        fill: var(--bg-main-color);
+        stroke: var(--button-color-dark);
+        stroke-width: 2px;
+        transition: fill 0.3s;
+      }
+
+      .social-icons__twitter,
+      .social-icons__facebook,
+      .social-icons__youtube,
+      .social-icons__instagram {
+        fill: var(--button-color-dark);
+        transition: fill 0.3s;
+      }
+
+      &:hover {
+        .social-icons__background {
+          fill: var(--button-color-dark);
+        }
+
+        .social-icons__twitter,
+        .social-icons__facebook,
+        .social-icons__youtube,
+        .social-icons__instagram {
+          fill: var(--bg-main-color);
+        }
+      }
+    }
+  }
+  .hero__scroll-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .bg {
+      fill: var(--bg-main-color) !important;
+      stroke: var(--button-color-dark);
+      stroke-width: 2;
+    }
+
+    &-symbol {
+      fill: var(--button-color-dark);
+    }
+
+    &:hover .hero__scroll-icon-bg,
+    &:hover .hero__scroll-icon-symbol {
+      fill: inherit;
+    }
+  }
 }

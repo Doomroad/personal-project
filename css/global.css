@@ -8,9 +8,14 @@
 
 :root {
   --bg-main-color: #c8d1af;
+  --bg-dark-color: #325956;
   --text-color-main: #577270;
   --text-color-light: #f1e6e1;
+  --text-color-mid: #668280;
+  --text-color-dark: #325956;
   --button-color-dark: #325956;
+  --button-color-hover-light: #4f7c78;
+  --button-color-hover-dark: #223f3c;
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
 }

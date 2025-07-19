@@ -29,5 +29,9 @@
     color: var(--text-color-light);
     border: none;
     outline: none;
+    &:hover {
+      background-color: var(--button-color-hover-dark);
+      cursor: pointer;
+    }
   }
 }
