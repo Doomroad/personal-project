@@ -21,6 +21,10 @@
       color: var(--text-color-main);
     }
 
+    .item {
+      position: relative;
+    }
+    
     .item::after {
       content: "";
       position: absolute;
@@ -29,7 +33,7 @@
       translate: -50%;
       width: 0;
       height: 2px;
-      background-color: var(--accent-color-hover);
+      background-color: var(--bg-dark-color);
       transition-duration: 0.5s;
     }
 
