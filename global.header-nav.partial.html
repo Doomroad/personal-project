@@ -1,13 +1,50 @@
 <div class="global-header">
-  <button class="global-header__logo company-logo">
-    <a href="#"><img src="img/header/logo-shine-main.svg" alt="Shine Logo" /></a>
+  <button class="global-header__logo company-logo" aria-label="Home">
+    <a href="#">
+      <img src="img/header/logo-shine-main.svg" alt="Shine Logo" />
+    </a>
   </button>
-  <nav class="global-header__nav-bar">
-    <ul class="global-header__nav-list">
-      <li class="global-header__about item"><a href="#" class="nav-link">About</a></li>
-      <li class="global-header__benefits item"><a href="#" class="nav-link">Benefits</a></li>
-      <li class="global-header__contacts item"><a href="#" class="nav-link">Contacts</a></li>
+
+  <nav class="global-header__nav-bar" role="navigation" aria-label="Main menu">
+    <ul class="global-header__nav-list" id="nav-list">
+      <li class="global-header__about item">
+        <a href="#" class="nav-link">About</a>
+      </li>
+      <li class="global-header__benefits item">
+        <a href="#" class="nav-link">Benefits</a>
+      </li>
+      <li class="global-header__contacts item">
+        <a href="#" class="nav-link">Contacts</a>
+      </li>
+      <!-- Мобільна кнопка в бургер-меню -->
+      <li class="global-header__order-btn--mobile-wrapper">
+        <button
+          class="global-header__order-btn global-header__order-btn--mobile"
+          type="button"
+        >
+          Order Shine Box Now
+        </button>
+      </li>
     </ul>
   </nav>
-  <button class="global-header__order-btn">Order Shine Box Now</button>
+
+  <!-- Десктопна кнопка справа -->
+  <button
+    class="global-header__order-btn global-header__order-btn--desktop"
+    type="button"
+  >
+    Order Shine Box Now
+  </button>
+
+  <button
+    class="header__burger"
+    type="button"
+    aria-label="Toggle menu"
+    aria-expanded="false"
+    aria-controls="nav-list"
+  >
+    <span class="header__burger-line"></span>
+    <span class="header__burger-line"></span>
+    <span class="header__burger-line"></span>
+  </button>
 </div>
