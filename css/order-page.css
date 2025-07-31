@@ -1,0 +1,8 @@
+.order-page {
+  background-color: var(--bg-light-color);
+  height: 1500px;
+  width: 100%;
+
+  .order-page__product-list {
+  }
+}

@@ -9,6 +9,8 @@
 :root {
   --bg-main-color: #c8d1af;
   --bg-dark-color: #325956;
+  --bg-mid-color: #668280;
+  --bg-light-color: #f1e6e1;
   --text-color-main: #577270;
   --text-color-light: #f1e6e1;
   --text-color-mid: #668280;
